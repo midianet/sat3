@@ -1,0 +1,1038 @@
+body {
+
+
+	background-image: -webkit-radial-gradient(10% 0, farthest-side ellipse, rgba(74, 121, 147, 0.89), rgb(110, 160, 187) 83%, rgba(74, 121, 147, 0.89) 110%);
+	/* background-image:radial-gradient(ellipse farthest-side at 10% 0 , rgba(74, 121, 147, 0.89), rgba(204, 204, 204, 0.85) 80%, rgba(74,121,147,0.89) 120%); */
+	background-image: radial-gradient(ellipse farthest-side at 10% 0, rgba(74, 121, 147, 0.89), rgb(110, 160, 187) 83%, rgba(74, 121, 147, 0.89) 110%)
+
+	/* background-image: -webkit-radial-gradient(10% 0, farthest-side ellipse, rgba(49, 114, 150, 0.89), rgb(110, 160, 187) 83%, rgba(49, 114, 150, 0.89) 110%); */
+	/* background-image: radial-gradient(ellipse farthest-side at 10% 0, rgba(49, 114, 150, 0.89), rgb(110, 160, 187) 86%, rgba(49, 114, 150, 0.89) 110%); */
+}
+
+.dropdown-menu {
+	width: auto;
+	padding: 4px;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.logo {
+	width: auto;
+	left: 0;
+	top: 0;
+	/**
+	background: #fff;
+	opacity: 0.4;
+    filter: alpha(opacity=40);
+    **/
+	height: 74px;
+	/* border: 1px solid #333; */
+	padding-top: 2px;
+}
+
+.logo strong { /* color: #333; */
+	
+}
+
+h1.logo-portal {
+	/*margin-top: 30px;*/
+	margin-top: 18px;
+	margin-left: 42px;
+/*	width: 272px;*/
+}
+
+h2.logo-scti {
+	float: right !important;
+	margin-top: -93px;
+	margin-right: 367px;
+}
+
+h2.logo-scti a {
+	display: block;
+	height: 70px;
+	width: 164px;
+	margin-top: 10px;
+	margin-left: 13px;
+	margin-right: 0px;
+	margin-bottom: 2px;
+}
+
+h3.logo-segplan {
+	float: right !important;
+	margin-top: -93px;
+	margin-right: 188px;
+	padding:10px;
+}
+
+h3.logo-segplan a {
+	display: block;
+	height: 68px;
+	width: 152px;
+	margin-top: 10px;
+	margin-left: 16px;
+	margin-right: 10px;
+	margin-bottom: 2px;
+}
+
+h4.logo-goias {
+	float: right !important;
+	margin-top: -93px;
+	margin-right: 44px;
+	padding: 10px;
+}
+
+h4.logo-goias a {
+	display: block;
+	height: 69px;
+	width: 143px;
+	margin-top: 10px;
+	margin-left: 14px;
+	margin-right: 10px;
+	margin-bottom: 2px;
+}
+
+h1.logo-portal strong {
+	color: #000;
+}
+
+h2.logo-scti strong {
+	color: #ddd;
+}
+
+h3.logo-segplan strong {
+	color: #333;
+}
+
+h4.logo-goias strong {
+	color: blue;
+}
+
+h1.logo-portal 	img {
+	height: 86px;
+}
+
+h2.logo-scti	img {
+	height: 60px;
+}
+
+h3.logo-segplan img {
+	height: 60px;
+}
+
+h4.logo-goias 	img {
+	height: 60px;
+}
+
+.sidebar {
+	margin-top: 120px;
+	/*width: 184px;*/
+	width: 220px;
+	margin: 80px 0 0 12px;
+}
+
+.wrap{
+	margin-left: 220px;
+}
+
+.side-nav {
+	margin-top: 50px;
+}
+
+.wrap {
+	margin-top: 120px; /* sempre ajustar considerando a classe logo */
+}
+
+.page-title {
+	margin-top: 2px;
+}
+
+.content {
+	padding-top: 0;
+}
+
+.page-header {
+	margin: 15px 0 0;
+	padding-right: 44px;
+}
+
+.page-header .navbar-nav {
+	margin-top: -6px;
+}
+
+.page-header .navbar-form {
+	margin-top: 3px;
+}
+
+.page-header .search-query {
+	background-position: 99% 1%;
+	padding-left: 8px;
+	margin-left: 5px;
+}
+
+.page-header .search-query {
+	background: url(../img/search.png) 5px 5px no-repeat
+		rgba(255, 255, 255, 0.8);
+}
+
+.navbar .nav>li>.support>li>a {
+	font-size: 12px;
+}
+
+.navbar .nav>li>.support>li>a:hover, .navbar .nav>li>.support>li>a:focus {
+	background: #ECF3F6;
+}
+
+.fa-tint:before {
+	font-size: 21px;
+}
+
+.fa-font:before {
+	font-size: 19px;
+}
+
+.news-list .news-item-info {
+	margin-left: 0;
+}
+
+.chat-message-body {
+	margin-left: 0;
+}
+
+
+
+.form-control:search {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3) inset;
+	background: #ECF3F6;
+}
+
+.alert {
+	padding: 16px;
+}
+
+.alert-warning {
+	color: #666;
+}
+
+/* .dataTables_length input[type=search], */
+.dataTables_filter input[type=search], .dataTable input[type=text],
+	.dataTables_length select {
+	/*background-position: 97%;
+	background: #fff url("../img/search.png") no-repeat scroll 2%;*/
+	/* 5px 6px */
+	padding: 5px 12px;
+	padding-left: 25px;
+	transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	color: #555;
+	font-size: 13px;
+	/* height: auto; */
+}
+
+.dataTables_length {
+	/*	width: 20%;	*/
+	/*	float: left; */
+}
+
+.dataTables_length select {
+	background: none;
+	padding-left: 10px;
+}
+
+.dataTable input[type=text] {
+	width: 100%;
+}
+
+.dataTables_wrapper .dataTables_filter {
+	/* float: right; */
+	text-align: right;
+	margin-top: -35px;
+}
+
+.dataTables_wrapper {
+	/* position: relative; */
+	clear: both;
+	zoom: 1;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+	text-align: right;
+	margin-top: -18px;
+}
+
+.table>thead>tr>th, .table>thead>tr>td, .table>tbody>tr>th, .table>tbody>tr>td, .table>tfoot>tr>th, .table>tfoot>tr>td {
+	vertical-align: middle;
+}
+
+a.paginate_button {
+	padding: 0 10px;
+	border-radius: 3px;
+	margin: 0 2px;
+	background-color: transparent;
+	/* border: 1px solid transparent; */
+	color: #666;
+	line-height: 1.42857;
+	text-decoration: none;
+	cursor: hand;
+}
+
+a.paginate_button:hover {
+	background-color: #eee;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.form-control[type=search], .form-control.search {
+	background-position: 97%;
+	padding-left: 12px;
+}
+
+button.DTTT_button, div.DTTT_button, a.DTTT_button {
+	background: #618fb0;
+	border-color: #5383a5;
+	color: #fff;
+	box-shadow: none;
+}
+
+button.DTTT_disabled, div.DTTT_disabled, a.DTTT_disabled {
+	background: #92B0C5;
+	border-color: #89A8BE;
+	box-shadow: none;
+}
+
+button.DTTT_button:focus, div.DTTT_button:focus, a.DTTT_button:focus {
+	background: #618fb0;
+	box-shadow: none;
+}
+
+button.DTTT_button:hover, div.DTTT_button:hover, a.DTTT_button:hover {
+	background: #4A7594;
+	box-shadow: none;
+}
+
+button.DTTT_button, div.DTTT_button, a.DTTT_button {
+	margin-left: 5px;
+	padding-top: 4px;
+	margin-right: 0;
+}
+
+table.dataTable tr.DTTT_selected.even {
+	background-color: #f6f6f6;
+}
+
+table.dataTable tr.DTTT_selected.even td.sorting_1 {
+	background-color: #f6f6f6;
+}
+
+table.dataTable tr.DTTT_selected.odd {
+	background-color: #f1f1f1;
+}
+
+table.dataTable tr.DTTT_selected.odd td.sorting_1 {
+	background-color: #f1f1f1;
+}
+
+div.DTTT_container{ 
+	/* margin-right: 88px; */
+}
+
+#btnRemoverItensSelecionados{
+	/* margin-bottom: -39px;
+	margin-top: 10px;
+	padding-top: 4px;
+	margin-right: 44px; */
+	margin-left: 4px;
+	padding: 5px 12px 4px 12px;
+}
+
+#btnEditarItemSelecionado{
+	/*
+	margin-bottom: -39px;
+	margin-top: 10px;
+	padding-top: 4px;
+	*/
+	margin-left: 4px;
+	padding: 5px 12px 4px 12px; 
+}
+
+
+
+/*  Inicio: Contraste ----------------------------------------------------------------------------------------------------------------- */
+body.contraste {
+	background: #000 !important;
+}
+
+    /* Fundo Preto */
+    body.contraste .container{
+        background: #000 !important;
+    }
+
+        /* Fundo Preto */
+        body.contraste  .container .btn {
+            background: #000 !important;
+            border-color: #000 !important;
+        }
+            /* Fundo Preto */
+            body.contraste .container .btn :hover {
+                background: #DDD !important;
+                border-color: #DDD !important;
+            }
+            
+        body.contraste  .container .btn .btn-primary{
+            background: #000 !important;
+            border-color: #000 !important;
+        }
+        
+            /* Fundo Preto */
+            body.contraste .container .btn .btn-primary :hover {
+                background: #DDD !important;
+                border-color: #DDD !important;
+            }
+            
+        body.contraste .container button.DTTT_button, body.contraste .container div.DTTT_button, body.contraste .container a.DTTT_button {
+            background: #000 !important;
+            border-color: #000 !important;        
+        }
+
+    body.contraste #mensagem,
+    body.contraste #mensagemGeral,
+    body.contraste #mensagemDetalhada {
+        background: white;
+        color: black;
+        border-color: white;
+    }
+
+    body.contraste .parsley-error {
+        background: white !important;
+        border-color: black !important;
+        box-shadow: inset 0 0 3px black !important;
+    }
+
+        body.contraste .parsley-errors-list li,
+        body.contraste .parsley-error + .chosen-container .chosen-choices {
+            color: black !important;
+        }
+
+        /* Apenas para o componente chosen*/
+        body.contraste .parsley-error + .chosen-container .chosen-choices {
+            border: black solid 1px !important;
+        }
+        
+		body.contraste .alert-warning {
+		    background-color: rgba(220, 219, 215, 0.28);
+		    border-color: #CCCCCC;
+		    color: #99999C;
+		}
+        
+	body.contraste .dropdown-menu {
+	    border: 6px solid #CCCCCC;
+	}
+
+	body.contraste .support-menu .presentation .support-ticket span.label {
+		background: #F5F5F4;
+	}
+
+	body.contraste .page-header .nav>li>a { 
+		background: none;
+	}
+/*  Fim: Contraste ----------------------------------------------------------------------------------------------------------------- */
+
+/* Inicio: Relevo  ----------------------------------------------------------------------------------------------------------------- */
+body.relevo .btn,
+body.relevo .form-control {
+    border: 1px outset #EEE !important;
+    box-shadow: 1px 1px 1px #eee !important;
+}
+
+body.relevo .form-control .page-header .search-query{
+	box-shadow: none;
+}
+
+body.relevo .side-nav li a {
+    /*background: #4f7e98 none repeat scroll 0 0;*/
+    border: 1px outset #eee;
+    border-radius: 6px;
+    color: inherit;
+    display: block;
+    margin: 2px 0;
+    /* padding: 10px 20px; */
+    text-decoration: none;
+    transition: background-color 0.2s ease 0s;
+} 
+
+body.relevo .page-header .nav>li>a {
+    border: 1px outset #eee;
+    border-radius: 6px;
+    /*background: #4f7e98;*/
+}
+
+body.relevo div.logo h1.logo-portal a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    height: 94px;
+    display: block;
+    border: 1px outset #ddd;
+    border-radius: 6px;
+    /*background: #4f7e98;*/
+    width:272px;
+}
+
+body.relevo h4.logo-goias {
+	border: 1px outset #ddd;
+    border-radius: 6px;
+    /*background: #4f7e98;*/
+    display: block;
+}
+
+body.relevo h3.logo-segplan {
+	border: 1px outset #ddd;
+    border-radius: 6px;
+    /*background: #4f7e98;*/
+    display: block;
+}
+
+body.relevo h2.logo-scti{
+	border: 1px outset #ddd;
+    border-radius: 6px;
+    /*background: #4f7e98;*/
+    display: block;
+}
+
+body.relevo .dataTables_filter input[type=search], body.relevo  .dataTable input[type=text], body.relevo .dataTables_length select {
+    border: 1px outset #EEE !important;
+    box-shadow: 1px 1px 1px #eee !important;
+}
+
+body.relevo button.DTTT_button, body.relevo div.DTTT_button, body.relevo a.DTTT_button{
+	border: 1px outset #EEE !important;
+    box-shadow: 1px 1px 1px #eee !important;
+}
+
+body.relevo .input-group-addon:last-child{
+	border: 1px outset #EEE !important;
+	box-shadow: 1px 1px 1px #eee !important;
+}
+
+body.relevo table.table thead .sorting {
+/*     border: 2px solid #EEE !important;
+    box-shadow: 1px 1px 1px #eee !important;	 */
+}
+
+body.relevo table.table thead .sorting_asc {
+/*     border: 2px solid #EEE !important;
+    box-shadow: 1px 1px 1px #eee !important; */	
+}
+
+body.relevo .sistema-sel-mouse-over {
+	border: 1px outset #ddd;
+	border-radius: 6px;
+	/*background: #4f7e98;*/
+	display: block;
+}
+/* Fim: Relevo  ----------------------------------------------------------------------------------------------------------------- */
+
+/* Inicio: Combinacao releveo e contraste*/
+body.relevo.contraste .side-nav li a {
+   background: #000 !important;
+}
+/* Fim Combinacaoo releveo e contraste*/
+
+.inverterCores{ 
+	font-size: 22px !important; 
+}
+.aumentarContraste{ 
+	padding-top:0 !important; 
+}
+
+
+/** Incio - Galeria de Sistemas e Itens de Acesso ----------------------------------------------------------------------------------------------------------------- */
+.gallery .image {
+	padding-left: 0;
+	width: 22%;
+}
+
+.gallery .image img {
+	border-radius: 3px 3px 0 0;
+	height: 60%;
+	width: 60%;
+	padding: 10px;
+	margin-left: 40%;
+}
+
+.gallery .image-info {
+	background: #f8f8f8 none repeat scroll 0 0;
+	border: 1px solid #E3E3E3;
+	border-radius: 0 0 3px 3px;
+	color: #707478;
+	font-size: 13px;
+	padding: 15px;
+	min-height: 96px;
+}
+
+.gallery .image-inner {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background: #f8f8f8 none repeat scroll 0 0;
+	border-color: #e3e3e3;
+	border-image: none;
+	border-radius: 3px 3px 0 0;
+	border-style: solid solid none;
+	border-width: 1px 1px 0;
+	position: relative;
+}
+
+.gallery .image-info .title {
+	font-size: 13px;
+}
+
+/* .row { margin:0; padding: 0; } */
+.btn-xs, .btn-group-xs>.btn {
+	padding: 5px 12px;
+	font-size: 13px;
+	margin: 2px 0;
+}
+
+.gallery .image-info .title {
+	white-space: normal;
+}
+
+#options {
+	margin-top: 4px;
+}
+
+#gallery {
+	margin-left: 5%;
+	margin-top: 50px;
+}
+
+.gallery .image-caption {
+	font-size: 14px;
+	top: 0;
+}
+
+.isotope-item {
+	min-width: 200px;
+}
+/** Fim - Galeria de Sistemas e Itens de Acesso ----------------------------------------------------------------------------------------------------------------- */
+
+
+/** Incio - Carrossel de Sistemas e Itens de Acesso ----------------------------------------------------------------------------------------------------------------- */
+.carousel-cell {
+	width: 100%; /* full width */
+	height: 160px; /* height of carousel */
+	/*height: 100%;*/
+	margin-right: 10px;
+}
+
+/* position dots up a bit */
+.flickity-page-dots {
+	bottom: -22px;
+}
+/* dots are lines */
+.flickity-page-dots .dot {
+	height: 4px;
+	width: 40px;
+	margin: 0;
+	border-radius: 0;
+}
+
+.flickity-page-dots .dot{
+	background: #fff;
+}
+
+/* big buttons, no circle */
+.flickity-prev-next-button {
+	width: 35px;
+	height: 100%;
+	background: transparent;
+}
+
+.flickity-prev-next-button:hover {
+	width: 35px;
+	height: 100%;
+	background: rgba(255,255,255,0.1);
+}
+
+/* arrow color */
+.flickity-prev-next-button .arrow {
+	fill: white;
+}
+.flickity-prev-next-button.no-svg {
+	color: white;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+	display: none;
+}
+
+.flickity-prev-next-button svg {
+	position: absolute;
+	left: 25%;
+	top: 20%;
+	width: 50%;
+	height: 30%;
+}
+
+.sistema-sel-mouse-over {
+	border: none;
+}
+
+table.sistema-sel-mouse-over:hover tr td i , table.sistema-sel-mouse-over:hover tr td h4 , table.sistema-sel-mouse-over:hover tr td h5 {
+	color: #fff;
+	cursor: pointer;
+}
+
+table.sistema-sel-mouse-over:hover tr td i {
+	text-shadow: 0 0 1px #fff, 0 0 1px #fff
+}
+/** Fim - Carrossel de Sistemas e Itens de Acesso ----------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+/** Inicio - estilizacao da barra de loading e loading circular ----------------------------------------------------------------------------------------------------------------- **/
+.pace-inactive {
+	opacity: 0;
+}
+
+.ie8 .pace .pace-activity, .ie8 .pace-inactive {
+	display: none;
+}
+
+.pace {
+	background: 0 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.pace-progress {
+	position: fixed;
+	opacity: 0.8;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	height: 3px;
+	background: white;
+	-webkit-transition: width 1s;
+	-moz-transition: width 1s;
+	-o-transition: width 1s;
+	transition: width 1s;
+}
+
+.pace:before {
+	content: '';
+	background: 0 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 3px;
+}
+
+.pace .pace-activity {
+	display: block;
+	opacity: 0.8;
+	position: fixed;
+	right: 8px;
+	top:10px;
+	width: 14px;
+	height: 14px;
+	border: 2px solid transparent;
+	border-top-color: white;
+	border-left-color: white;
+	border-radius: 10px;
+	-webkit-animation: pace-spinner 400ms linear infinite;
+	-moz-animation: pace-spinner 400ms linear infinite;
+	-ms-animation: pace-spinner 400ms linear infinite;
+	-o-animation: pace-spinner 400ms linear infinite;
+	animation: pace-spinner 400ms linear infinite;
+}
+
+
+@-webkit-keyframes pace-spinner {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes pace-spinner {
+	0% {
+		-moz-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-moz-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-o-keyframes pace-spinner {
+	0% {
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes pace-spinner {
+	0% {
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+
+	100% {
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes pace-spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+/** Fim - estilizacao da barra de loading e loading circular ----------------------------------------------------------------------------------------------------------------- **/
+
+
+
+
+/** Inicio - scroll da lista de unidades de acesso ----------------------------------------------------------------------------------------------------------------- **/
+
+.scrollable-content {
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+.scrollable-content::-webkit-scrollbar {
+	width:10px;
+	opacity: 0.1 !important;
+}
+.scrollable-content::-webkit-scrollbar * {
+	background:transparent;
+}
+.scrollable-content::-webkit-scrollbar-thumb {
+	background:rgba(255,255,255,0.6) !important;
+	border-radius: 10px;
+}
+/** Fim - scroll da lista de unidades de acesso ----------------------------------------------------------------------------------------------------------------- **/
+
+
+/** Inicio - esconde o label e descricao do sistema qdo a resolução for menor que a resolucao de um tablet(ipad) ----------------------------------------------  */
+@media only screen and (max-width:1536px){
+	.titulo-descricao-item-galeria-padrao-xs { display: none;}
+}
+
+@media only screen and (min-width:1536px){
+	.titulo-xs { display: none;}
+}
+/** Fim - esconde o label e descricao do sistema qdo a resolução for menor que a resolucao de um tablet(ipad) ----------------------------------------------  */
+
+.gallery h4 {
+	font-weight: 600;
+}
+.page-title{
+	color: #fff;
+}
+
+.image .gallery-group .element-item .cell{
+	cursor: pointer;
+}
+
+.icone-sistema-link {
+	width: 100px; padding: 10px; text-align: center; vertical-align: middle;
+}
+
+.icone-sistema-link i{
+	font-size: 50px;
+}
+
+
+.introjs-showElement , .introjs-showElement .image .gallery-group .element-item .cell , .introjs-showElement .image .gallery-group .element-item .cell:hover {cursor: default; color: inherit;}
+
+.image .gallery-group .element-item .cell{
+	cursor: pointer;
+}
+
+.account-picture {
+	padding: 5px 10px;
+	font-weight: normal;
+}
+
+/** Inicio - estilizacao do tour ----------------------------------------------  */
+.introjsFloatingElement , .introjs-showElement ,
+.introjs-overlay , .introjs-helperLayer, .introjs-tooltipReferenceLayer { color: #333;}
+
+.tour-inicial{width: 756px;}
+
+.introjs-tooltip{max-width: none; min-width: 250px;}
+.introjs-tooltiptext{padding: 15px;}
+/*.introjs-bullets{padding-bottom: 10px;}*/
+
+.introjs-nextbutton {
+	background: #4ab0ce;
+	border-color: #36a7c8;
+	text-shadow: none;
+	color: #fff;
+	font-family: "Open Sans",sans-serif;
+}
+.introjs-nextbutton:hover {
+	background: #3196B4;
+	color: #fff;
+}
+.introjs-disabled , .introjs-disabled:hover {
+	color: #9a9a9a;
+	border-color: #d4d4d4;
+	box-shadow: none;
+	cursor: default;
+	background-color: #f4f4f4;
+	background-image: none;
+	text-decoration: none;
+}
+
+.introjs-button {
+	font-family: "Open Sans",sans-serif;
+}
+
+.introjs-skipbutton:focus{
+	background: #4ab0ce;
+	border-color: #36a7c8;
+	text-shadow: none;
+	color: #fff;
+	font-family: "Open Sans",sans-serif;
+}
+
+.introjs-helperNumberLayer{
+	height: 28px;
+	width: 28px;
+	background: linear-gradient(to bottom, #f99f97 0%, #cf0404 100%);
+	font-family: "Open Sans",sans-serif;
+	padding:1px;
+}
+
+table.boas-vindas {
+	width: 600px; height: 100px;
+}
+
+h5.h5-boas-vindas{
+	text-align: center;
+	font-size: 24px;
+}
+
+.introjs-showElement table.sistema-sel-mouse-over:hover tr td i , .introjs-showElement table.sistema-sel-mouse-over:hover tr td h4 , .introjs-showElement table.sistema-sel-mouse-over:hover tr td h5 {
+	color: inherit;
+	cursor: default;
+}
+
+.introjs-showElement. table.sistema-sel-mouse-over:hover tr td i {
+	text-shadow: 0 0 1px #fff, 0 0 1px #fff
+}
+
+.page-header ul.introjs-showElement li form div span button i , .page-header ul.introjs-showElement li a , ul.introjs-showElement li a i { color: #333;}
+
+li.introjs-showElement ul li a i , .page-header li.introjs-showElement ul li a , li.introjs-showElement a i { color: #333;}
+
+.introjs-showElement span button i{ color: #333;}
+
+.notifytour {
+	margin-top:0;
+}
+/** Fim - estilizacao do tour ----------------------------------------------  */
+
+.containerNomeSistema {
+	display: inline;
+	vertical-align: sub;
+	font-size: 35px !important;
+	font-family: 'Raleway', sans-serif;
+}
+
+.conteudoDropDownInterno{
+	font-size: 12px;
+	padding-left: 3px;
+}
+
+.dropdown-menu .li-lick:hover {
+	background: #eee;
+	cursor: pointer;
+}
+
+.dropdown-menu {
+	z-index: 1051;
+}
+
+.login-content p{
+	text-align: justify;
+	padding: 10px 0;
+}
+
+/* circulo pulsante link portal---------------------------------------------------------------------*/
+.pulse {
+	display: block;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background: rgba(255,255,255,0.1);
+	border-color: rgba(255,255,255,0.6)	;
+	box-shadow: 0 0 0 rgba( 255, 255, 255, 0.80);
+	animation: pulse 2s infinite;
+}
+.pulse:hover {
+	animation: none;
+}
+
+@-webkit-keyframes pulse {
+	0% { -webkit-box-shadow: 0 0 0 0 rgba( 255, 255, 255, 0.80); }
+	70% { -webkit-box-shadow: 0 0 0 12px rgba( 255, 255, 255, 0); }
+	100% { -webkit-box-shadow: 0 0 0 0 rgba( 255, 255, 255, 0); }
+}
+@keyframes pulse {
+	0% { -moz-box-shadow: 0 0 0 0 rgba( 255, 255, 255, 0.80); box-shadow: 0 0 0 0 rgba( 255, 255, 255, 0.80); }
+	70% { -moz-box-shadow: 0 0 0 12px rgba( 255, 255, 255, 0); box-shadow: 0 0 0 12px rgba( 255, 255, 255, 0); }
+	100% { -moz-box-shadow: 0 0 0 0 rgba( 255, 255, 255, 0); box-shadow: 0 0 0 0 rgba( 255, 255, 255, 0); }
+}
+/* circulo pulsante link portal---------------------------------------------------------------------*/
+
+.dropdown-menu>li>a{ padding: 0;}
+.dropdown-menu>li>a{ padding: 0;}
+.account>li>a:hover,.account>li>a:focus{background: none; text-shadow: 0 0 2px #eee, 0 0 2px #eee;}
+
+.btn-toolbar{ margin-top: -59px; }
+
+.form-actions {
+	 padding: 0;
+	 margin-top: 0;
+	 background: none;
+}
+
+form fieldset{min-height: 130px;}
+.btn.btn-warning{ background: #f59c1a; }
+legend.section {line-height: 20px; font-weight:600; font-size: 14px;}
+.odd{border-bottom: 1px solid #ddd;}
+.edit-table-cell .btn{ padding: 4px 8px; }
+.btn-toolbar .btn { margin-right:4px;}
+
+@media (min-height: 940px){ .logo {position: absolute;} }
+
