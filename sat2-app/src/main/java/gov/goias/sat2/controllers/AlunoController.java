@@ -9,31 +9,52 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
-import org.springframework.data.domain.Sort.Direction;
-import org.springframework.data.domain.Sort.Order;
 import org.springframework.stereotype.Controller;
 
-
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.constraints.NotNull;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.text.ParseException;
+import java.util.*;
 
 @Controller
 @Path("/aluno")
-public class AlunoQueries {
+public class AlunoController {
 
-    private static final Logger LOGGER = Logger.getLogger(AlunoQueries.class);
+    private static final Logger LOGGER = Logger.getLogger(AlunoController.class);
+
+    @Autowired
+    private AlunoService service;
 
     @Context
     protected HttpServletRequest request;
 
-    @Autowired
-    AlunoService service;
+    @POST
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    public Response incluir(@FormParam("id") final Long id,
+                            @NotNull @FormParam("nome") final String nome,
+                            @NotNull @FormParam("email") final String email,
+                            @NotNull @FormParam("sexo") final String sexo,
+                            @FormParam("situacao") final Boolean situacao) throws ParseException {
+
+        Aluno aluno = new Aluno(id, nome, email , null, sexo, situacao);
+        if (id != null) {
+            service.salvar(aluno.toEntity());
+        } else {
+            aluno = aluno.from(service.salvar(aluno.toEntity()));
+        }
+        return Response.status(Response.Status.SEE_OTHER).header("Location", String.format("aluno/%s", aluno.getId())).build();
+    }
+
+    @DELETE
+    @Path("/{id}")
+    public Response remover(@PathParam("id") final Long id) {
+        service.remover(id);
+        return Response.status(Response.Status.OK).build();
+    }
 
     @GET
     @Path("/{id}")
@@ -72,7 +93,7 @@ public class AlunoQueries {
             final Integer page = new Double(Math.ceil(start / length)).intValue();
 
             final PageRequest pr = new PageRequest(page, length,
-                    new Sort(new Order(Direction.fromString(ordemDir), columns[ordem])));
+                    new Sort(new Sort.Order(Sort.Direction.fromString(ordemDir), columns[ordem])));
 
             final Page<Aluno> list = service.listarPaginado(id, nome, email, pr).map(a -> Aluno.from(a)) ;
 
@@ -92,7 +113,7 @@ public class AlunoQueries {
             LOGGER.error(e);
             dtr.setError(e.getMessage());
         }
-       return Response.status(Response.Status.OK).entity(dtr).build();
+        return Response.status(Response.Status.OK).entity(dtr).build();
     }
 
 }

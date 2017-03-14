@@ -9,12 +9,8 @@
         <section class="widget">
             <div class="body">
 
-                <form id="aluno-form" role="form" ng-submit="save()">
-z
-
-
+                <form id="aluno-form" role="form"  novalidate ng-submit="save()">
                     <fieldset>
-
                         <div class="form-actions">
                             <div class="btn-toolbar">
                                 <button type="submit" name="action" class="btn btn-info pull-right" ng-if="!isUpdate">
@@ -43,7 +39,11 @@ z
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label for="nome">Nome</label>
-                                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome do Aluno" ng-model="aluno.nome">
+                                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome do Aluno" required ng-model="aluno.nome">
+                                    <span style="color:red" ng-show="aluno-form.nome.$dirty && aluno-form.nome.$invalid">
+  <span ng-show="aluno-form.nome.$error.required">Username is required.</span>
+  </span>
+                                    <span ng-show="aluno-form.nome.$touched && aluno-form.nome.$invalid">O nome não pode ser nulo.</span>
                                     <ul class="parsley-errors-list filled" id="nome-errors"></ul>
 
                                 </div>
